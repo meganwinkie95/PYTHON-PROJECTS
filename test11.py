@@ -36,4 +36,4 @@ class Employee(User):
 class Customer(User):
     mailing_address = ' '
     mailing_list = True
-new_user = User("Jane Doe", "Jdoe@outlook.com", "password", 1234)
+
