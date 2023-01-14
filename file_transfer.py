@@ -72,7 +72,7 @@ class ParentWindow(Frame):
         for i in source_files:
             path = os.path.join(source, i) 
             modification_time = os.path.getmtime(path)
-            X = datetime.fromtimestamp(modification_time)
+            X = datetime.datetime.fromtimestamp(modification_time)
             Y = (datetime.datetime.now() - timedelta(hours=24))
             if X > Y:
                 #moves each file from the source to the destination
